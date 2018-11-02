@@ -45,6 +45,18 @@ header input[type="button"] {
     padding-bottom: 50px;
 }
 
+.dropdown-show {
+    display: none;
+    background: transparent;
+    position: absolute;
+    left: -40px;
+    list-style: none;
+}
+
+.dropdown:hover .dropdown-show{
+    display: block;
+}
+
 .title {
     font-size: 30px;
     font-weight: normal;
@@ -223,20 +235,19 @@ hr {
 #blog .row {
     margin-top: 50px;
 }
-#blog .col{
-   padding-bottom: 40px;
-   margin: 10px;
-   
+
+#blog .col {
+    padding-bottom: 40px;
+    margin: 10px;
 }
-#blog .card{
-   border: none;
-   box-shadow: 1px 1px 5px #cac8c8;
-    
- }
+
+#blog .card {
+    border: none;
+    box-shadow: 1px 1px 5px #cac8c8;
+}
 
 #blog .row img {
     height: 250px;
-    
 }
 
 #blog .description {
@@ -271,64 +282,70 @@ hr {
 #blog .blog_main p {
     color: #636161;
 }
-#blog input[type = "button"]{
+
+#blog input[type="button"] {
     margin-top: 40px;
     width: 150px;
     height: 40px;
     letter-spacing: 2px;
 }
-footer{
+
+footer {
     background: #28c03c;
     padding: 50px 0 50px 0;
 }
-footer .col{
+
+footer .col {
     padding: 0;
-    
 }
-footer ul{
-   list-style: none;
-   
+
+footer ul {
+    list-style: none;
 }
-footer ul h5{
+
+footer ul h5 {
     color: white;
- }
- footer ul li{
-   
+}
+
+footer ul li {
     margin-top: 10px;
- }
- footer ul a{
+}
+
+footer ul a {
     color: #cac8c8;
     text-transform: capitalize;
-    
- }
- footer #contact{
-     margin-top: 40px;
- }
- footer #contact ul li{
-     display: inline-block;
-     margin: 15px;
- }
- footer #contact ul li i {
+}
+
+footer #contact {
+    margin-top: 40px;
+}
+
+footer #contact ul li {
+    display: inline-block;
+    margin: 15px;
+}
+
+footer #contact ul li i {
     color: #ccc;
     font-size: 25px;
-
-
 }
+
 footer #contact p {
-   padding-left: 260px;
-   padding-right: 260px;
-   color: azure;
+    padding-left: 260px;
+    padding-right: 260px;
+    color: azure;
 }
+
 footer #contact small {
     color: #1f992f;
- }
- @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     footer #contact p {
         padding-left: 0;
         padding-right: 0;
-        
-     } 
-     #business #showbar {
+    }
+    #business #showbar {
         display: none;
     }
- }
+}
